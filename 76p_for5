@@ -1,0 +1,13 @@
+
+//for 구문을 두번 써서 원 채우기 
+
+size (400,400);
+background(10);
+noStroke();
+fill(50);
+
+for (int x = 15; x < width; x+=30){
+for (int y = 15; y < height; y+=30){
+ellipse(x,y,30,30);
+}
+}
