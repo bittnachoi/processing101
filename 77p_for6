@@ -1,0 +1,16 @@
+//앞ㅅ for5와 뭐가 다른지
+
+size(400,400);
+background(255);
+noStroke();
+for (int y=0; y<height+30; y +=30) {
+  fill (50,100);
+  ellipse(0,y,30,30);
+}
+for (int x=0; x<width+30; x +=30) {
+ fill (50,100);
+ ellipse (x,0,30,30);
+}
+
+
+
