@@ -1,0 +1,12 @@
+int x = mouseX;
+int y = mouseY;
+int diameter = 1;
+
+void setup(){
+size (300,200);
+strokeWeight (10);
+fill(255);
+}
+void draw(){
+  ellipse (mouseX,mouseY,diameter, diameter);
+}
