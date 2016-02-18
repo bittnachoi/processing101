@@ -10,3 +10,57 @@ fill(255);
 void draw(){
   ellipse (mouseX,mouseY,diameter, diameter);
 }
+
+//백그라운드가 계속 지워지게 
+
+int x = mouseX;
+int y = mouseY;
+int diameter = 1;
+
+void setup(){
+size (300,200);
+strokeWeight (10);
+fill(255);
+}
+void draw(){
+  background(255);
+  ellipse (mouseX,mouseY,diameter, diameter);
+}
+
+int x = mouseX;
+int y = mouseY;
+int diameter = 1;
+
+// 이전 좌표와의 반응하여 원 그리기 (왜 이렇게 되지?)
+void setup(){
+size (300,200);
+strokeWeight (10);
+fill(255);
+}
+void draw(){
+  background(255);
+  ellipse (mouseX,mouseY,pmouseX, pmouseY);
+}
+
+//이전 좌표와 반응하여 라인드로잉하기
+void setup(){
+size (300,200);
+strokeWeight (0);
+fill(255);
+}
+void draw(){
+
+  line (mouseX,mouseY,pmouseX, pmouseY);
+}
+
+//마우스 속도에 따른 라인의 굵기
+
+void setup(){
+size (300,200);
+stroke(0,100);
+}
+void draw(){
+float weight = dist (mouseX,mouseY,pmouseX,pmouseY);
+strokeWeight(weight);
+  line (mouseX,mouseY,pmouseX, pmouseY);
+}
