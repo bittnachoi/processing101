@@ -1,0 +1,16 @@
+float x;
+float easing = 0.1;
+float diameter = 12;
+
+void setup(){
+  size(600,300);
+  background (255);
+  
+}
+
+void draw(){
+  float targetx=mouseX;
+  x += (targetx -x) *easing;
+  ellipse (x,mouseY,12,12);
+ 
+}
