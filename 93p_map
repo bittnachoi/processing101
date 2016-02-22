@@ -1,0 +1,28 @@
+void setup(){
+size(400,200);
+strokeWeight(10);
+background (120);
+}
+
+void draw(){
+  stroke(255);
+  line(10,10,mouseX,mouseY);
+  stroke(0);
+  float mx = mouseX/2 + 60;
+  line(10,10,mx,mouseY);
+}
+
+//
+void setup(){
+  size(240,120);
+  strokeWeight(10);
+}
+
+void draw (){
+  background(200);
+  stroke(255);
+  line(120,60,mouseX,mouseY);
+  stroke(0);
+  float mx = map(mouseX,0,width,200,20);
+  line (120,60, mx,mouseY);
+}
