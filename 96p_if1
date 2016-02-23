@@ -1,0 +1,35 @@
+void setup(){
+  size(300,300);
+  strokeWeight(20);
+}
+
+void draw(){
+  background (255);
+  line(40,0,width,50);
+  if(mousePressed){
+  stroke(0);
+  line(0,70,50,height);
+  }
+}
+
+//p96 
+
+void setup(){
+  size(240,120);
+  strokeWeight(10);
+}
+
+void draw(){
+  background(255);
+  stroke(100);
+  line(40,0,70,height);
+
+  if(mousePressed){
+   stroke(0);
+  }else{
+    stroke(255);
+}
+  line(0,70,width,50);  
+}
+// 마지막 line 명령어가 {}안으로 들어가면 나오는 반응은?
+
